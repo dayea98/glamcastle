@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GlamCastle</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div style="width:1500px; margin: 0 auto;">
+		<div class="header">
+			<div style="position:absolute; left:40%; width:300px; height:60px;" >
+				<img src="img/swuticket.jpg">
+			</div>			
+		</div>
+		
+		<div style="width: 1500px; height: 100px;">			
+			<form style="padding-left: 500px;" class="example" action="action_page.php">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+
+		<div class="menu">
+			<table id="menu">
+				<tr>
+					<td id="category">연극</td>
+					<td id="category">세미나</td>
+					<td id="category">공연</td>
+					<td id="category">스터디</td>
+					<td id="category">
+						<button class="button">MY PAGE</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="main">
+			<table cellpadding=15 id="write">
+                <tr>
+                    <td><b><h2>제목</h2></b></td>
+                    <td><input type=text id="title"></td>
+                </tr>
+                <tr>
+                    <td><b><h3>포스터 이미지 업로드</h3></b></td>
+                    <td>
+                        <div class="file_input">
+                            <label>
+                                File Attach
+                                <input type="file" onchange="javascript:document.getElementById('file_route').value=this.value">
+                            </label>
+                            <input type="text" readonly="readonly" title="File Route" id="file_route">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b><h2>이벤트 내용</h2></b></td>
+                    <td><input type=text id="content"></td>
+                </tr>
+            </table>
+            
+            <table id="button">
+                <tr>
+                    <td><button class="button">MY PAGE</button></td>
+                </tr>
+            </table>
+		</div>
+	</div>
+</body>
+</html>

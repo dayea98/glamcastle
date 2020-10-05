@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GlamCastle</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div style="width:1500px; margin: 0 auto;">
+		<div class="header">
+			<div style="position:absolute; left:40%; width:300px; height:60px;" >
+				<img src="img/swuticket.jpg">
+			</div>			
+		</div>
+		
+		<div style="width: 1500px; height: 100px;">			
+			<form style="padding-left: 500px;" class="example" action="action_page.php">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+				</form>
+		</div>
+
+		<div class="menu">
+			<table id="menu">
+				<tr>
+					<td id="category">연극</td>
+					<td id="category">세미나</td>
+					<td id="category">공연</td>
+					<td id="category">스터디</td>
+					<td id="category">
+						<button class="button">MY PAGE</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="main">
+			<table id="menu">
+				<tr>
+					<td style="padding-right: 20px;" name="view">
+						<img src="img/poster1.jpg" width="320">
+						<h3>보컬컴퍼니 정기공연 8th 목하</h3>
+						<button style="margin-top: 30px;" class="button"onclick="location.href='swuticket_upload.html'">
+							detail
+						</button>
+					</td>
+					<td style="padding-right: 20px;" name="view">
+						<img src="img/poster2.jpg" width="320">
+						<h3>어반브러시 과학문화 교육 세미나</h3>
+						<button style="margin-top: 30px;" class="button">detail</button>
+					</td>
+					<td style="padding-right: 20px;" name="view">
+						<img src="img/poster3.jpg" width="320">
+						<h3>연극 빌미</h3>
+						<button style="margin-top: 30px;" class="button">detail</button>
+					</td>
+					<td style="padding-right: 20px;" name="view">
+						<img src="img/poster4.jpg" width="320">
+						<h3>2018 동아리 모집</h3>
+						<button style="margin-top: 30px;" class="button">detail</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
